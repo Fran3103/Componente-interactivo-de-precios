@@ -180,16 +180,24 @@ body{
         background-color: variables.$White-Pricing-Component-Background;
         padding-top: 20px;
         gap: 10px;
-        .check{
-            
+        
+        .tildes{
             display: flex;
-            gap: 20px;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            color: variables.$Grayish-Blue-Text;
-            font-size: 10px;
+            align-items: center;
+            gap: 10px;
+            .check{
+            
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                color: variables.$Grayish-Blue-Text;
+                font-size: 10px;
+            }
+    
         }
-
         button{
             margin: 20px 0;
             
