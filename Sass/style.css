@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+@import url(/Sass/cssreload.css);
+body {
+  background-image: url(/images/bg-pattern.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.container .titulos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .titulos img {
+  z-index: -1;
+  margin-top: 30px;
+}
+.container .titulos h1 {
+  margin-top: -110px;
+  color: hsl(227, 35%, 25%);
+}
+.container .titulos p {
+  text-align: center;
+  margin: 10px auto;
+  font-size: 13px;
+  line-height: 1.7;
+  color: hsl(225, 20%, 60%);
+}
+.container .boxs {
+  box-shadow: 1px 0 10px 1px rgba(180, 180, 180, 0.5);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.container .boxs .rangos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  color: hsl(225, 20%, 60%);
+}
+.container .boxs .rangos .txt {
+  width: 100%;
+  text-align: center;
+}
+.container .boxs .rangos .txt .precio {
+  position: relative;
+  top: 70px;
+  font-size: 20px;
+}
+.container .boxs .rangos .txt .precio .mes {
+  font-size: 12px;
+}
+.container .boxs .rangos .txt .cien-k {
+  margin: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.container .boxs .rangos .txt .barra {
+  margin: 30px auto;
+  margin-top: 0;
+  background-color: hsl(224, 65%, 95%);
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+}
+.container .boxs .rangos .txt .barra .linea {
+  background-color: hsl(174, 77%, 80%);
+  width: 50%;
+  height: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.container .boxs .rangos .txt .barra .linea .circulo {
+  background-color: hsl(174, 86%, 45%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -20px;
+  top: -16px;
+  box-shadow: 0 10px 10px 1px hsl(174, 86%, 79%);
+}
+.container .boxs .rangos .year {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  margin-top: 60px;
+  font-size: 12px;
+}
+.container .boxs .rangos .year .btn {
+  background-color: hsl(223, 50%, 87%);
+  width: 40px;
+  height: 20px;
+  border-radius: 50px;
+  padding: 3px;
+}
+.container .boxs .rangos .year .btn .circulo-btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.container .boxs .rangos .year .btn .circulo-btn .circulo {
+  background-color: hsl(0, 0%, 100%);
+  width: 13px;
+  height: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .boxs .rangos .year .descuento {
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  padding: 3px 10px;
+  border-radius: 40px;
+}
+.container .checks {
+  margin-top: 2px;
+  border-radius: 0 0 5px 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  padding-top: 20px;
+  gap: 10px;
+}
+.container .checks .check {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: hsl(225, 20%, 60%);
+  font-size: 10px;
+}
+.container .checks button {
+  margin: 20px 0;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(223, 50%, 87%);
+  font-size: 12px;
+}/*# sourceMappingURL=style.css.map */
