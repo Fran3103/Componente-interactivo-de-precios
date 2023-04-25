@@ -13,6 +13,8 @@ body{
     
 }
 
+
+
 .container{
     margin: 0 auto;
     width: 90%;
@@ -41,7 +43,7 @@ body{
         }
         p{
             text-align: center;
-            margin: 10px auto;
+            margin: 10px 80px;
             font-size: 13px;
             line-height: 1.7;
             color: variables.$Grayish-Blue-Text;
@@ -57,6 +59,7 @@ body{
         justify-content: center;
         align-items: center;
         margin-top: 50px;
+        border-radius: 10px;
         .rangos{
             display: flex;
             flex-direction: column;
@@ -65,7 +68,7 @@ body{
             width: 100%;
             height: 100%;
             background-color: variables.$White-Pricing-Component-Background;
-            border-radius: 5px 5px 0 0;
+            border-radius: 10px 10px 0 0;
             
             padding: 10px;
             color: variables.$Grayish-Blue-Text;
@@ -105,7 +108,7 @@ body{
                         border-radius: 10px;
                         position: relative;
                         .circulo{
-                            background-color: variables.$StrongCyan-SliderBackround;
+                            background-color: variables.$SoftCyan-Full-Slider-Bar;
                             width: 40px;
                             height: 40px;
                             border-radius: 50%;
@@ -116,7 +119,13 @@ body{
                             right: -20px;
                             top: -16px;
                             box-shadow: 0 10px 10px 1px hsl(174, 86%, 79%);
+                            cursor: pointer;
+                            
                         }
+                        .circulo:hover{
+                            background-color: variables.$StrongCyan-SliderBackround;
+                        }
+                        
                     }
                 }
             }
@@ -136,7 +145,7 @@ body{
                     height: 20px;
                     border-radius: 50px;
                     padding: 3px;
-                    
+                    cursor: pointer;
 
                     .circulo-btn{
                         width: 100%;
@@ -153,24 +162,40 @@ body{
                             justify-content: center;
                             align-items: center;
                         }
+                        
                     }
 
                 }
+
+                .btn-activo{
+                    background-color: variables.$SoftCyan-Full-Slider-Bar;
+                    .circulo-btn{
+                        justify-content: end;
+                        
+                    
+                    }
+                }
+                
 
                 .descuento{
                     background-color: variables.$Light-Grayish-Red-Discount-Background;
                     color: variables.$LightRedDiscount-Text;
                     padding: 3px 10px;
                     border-radius: 40px;
-                    
+
+                    .discount{
+                        display: none;
+                    }
                 }
+
+
             }
         }
     }
 
     .checks{
         margin-top: 2px;
-        border-radius: 0 0 5px 5px;
+        border-radius: 0 0 10px 10px;
         
         width: 100%;
         display: flex;
@@ -208,7 +233,100 @@ body{
             color: variables.$Light-Grayish-Blue-Toggle-Background;
             font-size: 12px;
         }
+        button:hover{
+            color: variables.$Grayish-Blue-Text;
+            cursor: pointer;
+        }
     }
 
 }
 
+@media screen and (min-width: 640px) {
+    body{
+        background-size: contain;
+    }
+    .container{
+        max-width: 600px;
+        margin-top: 50px;
+        .titulos{
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 16px;
+
+            }
+        }
+
+
+
+        .boxs{
+            .rangos{
+                width: 100%;
+                .txt{
+                    
+                    text-align: left;
+                    .cien-k{
+                        margin-top: 30px;
+                        margin-left: 30px;
+                    }
+                    .precio{
+                        font-size: 28px;
+                        top: -45px;
+                        right: -370px;
+                        .mes{
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .year{
+                    justify-content: center;
+                    
+                    gap: 10px;
+                    margin-top: 30px;
+                    margin-right: -70px;
+                    width: 100%;
+                    .descuento{
+                        padding: 3px 10px;
+                        display: flex;
+                        flex-direction: row;
+                        
+                        
+                        text-align: center;
+                        p{
+
+                            display: flex;
+                            justify-content: center;
+                            gap: 2px;
+                            
+                            font-size: 10px;
+                            .discount{
+                                display: flex;
+                                font-size: 10px;
+                                text-align: center;
+                            }
+                        }
+                        
+                    }
+
+                }
+            }
+           
+        }
+
+        .checks{
+            
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            .tildes{
+                align-items: start;
+                
+            }
+            
+        }
+    }
+    
+}
